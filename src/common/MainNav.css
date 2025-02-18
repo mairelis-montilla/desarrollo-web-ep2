@@ -1,0 +1,4 @@
+.navbar-nav .nav-link.active{
+    color: var(--color4);
+    box-shadow: 0 2px var(--color4);
+}

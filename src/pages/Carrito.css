@@ -1,0 +1,12 @@
+.icono-eliminar {
+  cursor: pointer;
+
+}
+
+.icono-eliminar:hover {
+  color: var(--color4)
+}
+.caja-cantidad {
+  width: 100px;
+  margin-left: auto;
+}

@@ -1,0 +1,53 @@
+.precio-anterior{
+    font-size: 0.9em;
+    color: var(--color4);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.icono-vista-rapida{
+    background-color: #FFFFFF;
+    position: absolute;
+    /*right: 50%;*/
+    right: -50px;
+    top: 100px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    border: solid 1px var(--color-negro);
+    transition: all 0.5s ease-in-out;
+}
+.icono-vista-rapida:hover{
+    background-color: var(--color2);
+    color: #FFFFFF;
+}
+.card:hover .icono-vista-rapida{
+    opacity: 1;
+    right: 10px;
+}
+.card{
+    overflow: hidden;
+}
+.card img{
+    transition: all 0.5s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.2,1.2);
+}
+.porcentaje-descuento{
+    position: absolute;
+    background: var(--color4);
+    color: var(--color-blanco);
+    padding: 5px 10px;
+    right: 0;
+    border-radius: 0 0 0 10px;
+}
+
+.icono-carrito{
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.icono-carrito:hover{
+    color: var(--color1);
+}

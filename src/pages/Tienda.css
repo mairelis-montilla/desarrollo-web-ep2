@@ -1,0 +1,9 @@
+#lista-categorias .badge{
+    right: 5px;
+    top: 50%
+}
+.list-group-item.active {
+
+    background-color: var(--color1);
+    border-color: var(--color1);
+}

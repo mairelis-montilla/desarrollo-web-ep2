@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --color1: #4B0082;  
+  --color2: #6A0DAD;  
+  --color3: #8A2BE2; 
+  --color4: #4169E1; 
+  --color-gris-claro: #CCCCCC;
+  --color-gris-oscuro: #333333;
+  --color-blanco: #FFFFFF;
+  --color-negro: #000000;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 72px;
+  letter-spacing: -4px;
+  font-weight: 200;
+  font-family: 'Arvo', sans-serif;
+}
+h2{
+  font-size: 36px;
+  letter-spacing: -2px;
+  font-weight: 900;
+  font-family: 'Arvo', sans-serif;
+
+}
+h3{
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Arvo', sans-serif;
+
+}
+
+.padded{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#logo{
+  max-width: 240px;
+}
+
+#page-header{
+  background-color: var(--color1);
+  color: var(--color-blanco);
+  padding: 20px 0;
+  border-bottom: solid 3px var(--color2);
+}
+
+/* Precarga */
+.lds-roller,
+.lds-roller div,
+.lds-roller div:after {
+  box-sizing: border-box;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  border-radius: 50%;
+  background: var(--color4);
+  margin: -3.6px 0 0 -3.6px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 62.62742px;
+  left: 62.62742px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 67.71281px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 70.90963px;
+  left: 48.28221px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 70.90963px;
+  left: 31.71779px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 67.71281px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 62.62742px;
+  left: 17.37258px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12.28719px;
+}
+
+.btn-primary{
+  background-color: var(--color1);
+  border-color: var(--color2);
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+.seleccionados{
+  flex: 1;
+  min-height: 75vh;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1520px;
+  }
+}
