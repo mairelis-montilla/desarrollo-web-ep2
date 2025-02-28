@@ -133,6 +133,22 @@ h3{
   left: 12.28719px;
 }
 
+.icono-ojo {
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+.image-futbol{
+  height: 50px;
+  width: auto;
+}
+.icono-ojo:hover{
+  color: var(--color-blanco);
+  background-color: var(--color2);
+}
+
 .btn-primary{
   background-color: var(--color1);
   border-color: var(--color2);
@@ -140,6 +156,11 @@ h3{
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus{
   background-color: var(--color2);
   border-color: var(--color2);
+}
+.btn-primary:disabled{
+  background-color: var(--color-gris-claro);
+  color: var(--color-gris-oscuro);
+  border-color: var(--color-gris-oscuro);
 }
 .seleccionados{
   flex: 1;

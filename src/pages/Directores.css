@@ -10,3 +10,8 @@
 #directores table tr:hover i {
   display: inline;
 }
+
+#directores table thead tr th:last-child, 
+#directores table thead tr th:nth-child(4) {
+ width: 50px;
+}

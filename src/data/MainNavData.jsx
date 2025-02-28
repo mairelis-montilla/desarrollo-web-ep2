@@ -24,6 +24,16 @@ export const navlist = [
         url: "/directores",
         title: "Directores de peliculas"
     },
+    {
+        text: "Futbol",
+        url: "/futbol",
+        title: "Fútbol"
+    },
+    {
+        text: "Paises",
+        url: "/paises",
+        title: "Paises"
+    },
 ]
 
 export const navlistRight = [

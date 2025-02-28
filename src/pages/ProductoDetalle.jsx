@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { API_URL } from "../utils";
+import { agregarCarrito, API_URL } from "../utils";
 
 function ProductoDetalle() {
   const params = useParams();
   const [productoSeleccionado, setProductoSeleccionado] = useState([]);
-
+  const [cantidad, setCantidad] = useState(1)
   useEffect(() => {
     leerServicio();
   }, []);
@@ -78,6 +78,13 @@ function ProductoDetalle() {
                 <tr>
                   <th>Atención al cliente</th>
                   <td>{productoSeleccionado.telefono}</td>
+                </tr>
+                <tr>
+                  <th>Cantidad</th>
+                  <td>
+                    <input type="number" className="form-control" onChange={(event) => setCantidad(event.target.value)} value={cantidad} defaultValue="1" min="1" />
+                    <button className="btn btn-primary mt-2" onClick={()=> agregarCarrito(productoSeleccionado, cantidad)}>Agregar al Carrito</button>
+                  </td>
                 </tr>
               </tbody>
             </table>
